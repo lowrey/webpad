@@ -68,15 +68,14 @@ if (isset($_POST["t"])) {
 </head>
 <body>
     <div id="div">
-        <textarea id="content" spellcheck="true">
-            <?php 
+        <textarea id="content" spellcheck="true"><?php 
             if (file_exists($path)) {
                 print htmlspecialchars(file_get_contents($path));
-            }?>
-        </textarea>
+            }
+      ?></textarea>
     </div>
     <pre id="print"></pre>
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
     <script src="lib/jquery.textarea.js"></script>
     <script src="script.js"></script>
 </body>
